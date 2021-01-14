@@ -6,12 +6,128 @@
 body{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    background-color : #010628;
+    background-color : #010628; 
+    color : #FFEBF0;
+    font-family: 'Inconsolata', monospace;
+}
+
+p{
+    font-weight: 400;
 }
 
 header{
-    height:150px;
+    padding-top : 100px;
+    height: 230px;
     grid-column: 1/13;
+    display: grid;
     grid-template-columns: repeat(12,1fr);   
+    grid-template-rows: 50% 50% ;
 }
+
+main{
+    padding-top: 50px;
+    grid-column:2/12; 
+    display: grid;  
+    grid-template-columns: repeat(12, 1fr);
+    background-color:mediumorchid;
+}
+
+/* Header */
+
+h1{
+    font-size: 40px;
+    font-weight: 500;
+    grid-column: 2/5;
+    color :#FF1F57;
+    display: flex;
+    align-items: center;
+}
+
+h2:first-child{
+    color:#32E0C4;
+}
+
+ header h2:last-child{
+    color:#FF1F57;
+    font-size: 40px;
+    font-weight: 500;
+    grid-area: 1/8/3/12;
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+header img:first-of-type{
+    grid-area: 2/4/3/6;
+    align-self: center;
+    justify-self:center;
+}
+
+header img:last-of-type{
+    width : 200px;
+    height: 200px;
+    grid-area: 1/6/3/8;
+    align-self: center;
+    justify-self:center;
+}
+
+
+#infos{
+    grid-area: 2/2/3/4;
+}
+  
+/* Sections */
+
+section h2{
+    font-size : 35px; 
+    font-weight: 600;
+}
+
+/* Main-section */
+
+article{
+    font-size: 20px;
+    line-height: 1.5em;
+    text-align:justify; 
+    display: grid;
+    grid-template-rows: 70px auto;
+    align-items:center;
+    
+} 
+
+#mainSection{
+    grid-column:6/13; 
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#mainSection span{
+    font-weight: 500;
+    font-size: 20px;
+    color: #FF1F57;
+}
+
+#experience{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+#education{
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr) ;
+    line-height: 1.5em;
+    align-items: center;
+}
+
+#workExp{
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: repeat(4, 70px);
+    line-height: 1.5em;
+    align-items: center;
+}
+
+
+/* Aside */
 
