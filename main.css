@@ -178,3 +178,19 @@ h3{
 .sidebar_hobbies__icon{
     width: 70px;
 }
+
+/* Footer */ 
+
+footer{
+    grid-column: 2/12;
+    font-size: 20px; 
+    line-height: 1.5em;
+    margin-top: 30px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+footer blockquote{
+    color:#32E0C4;
+
+}
